@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="Cart.css" />
+  </head>
+  <body>
+    <div class="all">
+    <div class="header">
+    <div class="headi">
+      <h1>Shopping Cart</h1>
+    </div>
+    <nav>
+        <div class = "logo">
+          <img src="home/logo1.jpg" alt="" width="85px" height="80px">
+        </div>
+        <ul>
+          <li class="list-1"><a href="Home.html">Home</a></li>
+          <li class="list-1"><a href="AboutUs.html">AboutUs</a></li>
+          
+          <li class="list-1">
+            <a href="#">Categories</a>
+            <ul class="dropdown">
+              <li><a href="MobilePhones.html">SmartPhones</a></li>
+              <li><a href="Laptop.html">Laptop</a></li>
+              <li><a href="Television.html">Television</a></li>
+              <li><a href="SmartWatch.html">SmartWatch</a></li>
+              <li><a href="Headphones.html">Headphone</a></li>
+            </ul>
+            <li><a href="ContactUs.html">Contact</a></li>
+          </li>
+        </ul>
+        <div class="search">
+          <img src="Laptop/search-icon.png" alt="" width="80px" height="80px">
+        </div>
+        <div class="profile">
+          <a href="SIgnIn.html"><img src="Laptop/pro.png" alt="" width="60px" height="60px"></a>
+        </div>
+        <div class="cart1">
+          <a href="Cart.html"><img src="Laptop/cart1.jpg" alt="" width="70px" height="70px"></a>
+        </div>
+      </nav>
+      </div>
+    <div class="car-str">
+    <h2>Products</h2>
+    <div id="products">
+      
+      <ul class="ul">
+        <div class="products-1">
+        <div class="product-1">
+        <li class = "lisy" data-name="Dell Lattitude7000" data-price="135000">
+            <div class="img">
+            <img src="Laptop/dell1.avif" alt="" width="280px" height="250px"></div>
+            <p>Dell Lattitude7000 - &#8377;1,35,000</p>
+            <button class="add-to-cart">Add</button>
+          <!-- <span class="quantity"
+            >Quantity: <span class="product-quantity">0</span></span
+          > -->
+          <!-- <button class="increment">+</button> -->
+          <!-- <button class="decrement">-</button> -->
+        </li>
+        </div>
+        <div class="product-2">
+        <li class = "lisy" data-name="Ideapad3" data-price="47000">
+            <div class="img">
+            <img src="Laptop/lenovo1.webp" alt="" width="280px" height="250px"></div>
+            <p>Lenovo Ideapad3 - &#8377;47,000</p>
+          <button class="add-to-cart">Add</button>
+          <!-- <span class="quantity"
+            >Quantity: <span class="product-quantity">0</span></span
+          > -->
+          <!-- <button class="increment">+</button> -->
+          <!-- <button class="decrement">-</button> -->
+        </li>
+        </div>
+        <div class="product-3">
+        <li class = "lisy" data-name="Apple MacBook Pro" data-price="260000">
+            <div class="img">
+            <img src="Laptop/mac1.png" alt="" width="280px" height="250px"></div>
+            <p>MacBook Pro - &#8377;260000</p>
+          <button class="add-to-cart">Add</button>
+          <!-- <span class="quantity"
+            >Quantity: <span class="product-quantity">0</span></span
+          > -->
+          <!-- <button class="increment">+</button> -->
+          <!-- <button class="decrement">-</button> -->
+        </li>
+        </div>
+        </div>
+      </ul>
+    </div>
+    <div id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: &#8377;<span id="total">0.00</span></p>
+        <a href="payment.html"><button id="checkout">Proceed To Pay</button></a>
+      </div>
+    </div>
+    </div>
+    <script src="Cart.js"></script>
+  </body>
+</html>

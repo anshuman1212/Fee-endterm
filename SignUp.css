@@ -1,0 +1,335 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+        background-color: rgb(232, 232, 232);
+}
+/* .iss{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.iss img{
+    box-shadow: 2px 2px 5px black;
+}
+.example input {
+    height: 30px;
+}
+.example button{
+    height: 30px;
+    width: 30px;
+}
+#lis{
+    list-style: none;
+    display: flex;
+    width: 95%;
+    height: 40px;
+    align-items: center;
+    /* justify-self: center; */
+    /*justify-content: space-around;
+    background-color:#3d6cc9;
+    font-size: x-large;
+}
+#lis a{
+    text-decoration: none;
+    color: azure;
+    padding: 5px;
+}
+#lis a:hover{
+    background-color: #3b0d96;
+} */
+nav{
+    margin-top: 20px;
+    /* margin-left: 30%; */
+    background-color: white;
+    display: flex;
+    position: sticky;
+}
+ul{
+    margin-left: 25%;
+    margin-right: 20%;
+    list-style: none;
+    /* background: #8c52ff; */
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    
+}
+ul li a{
+    display: block;
+    padding-top: 30px;
+    /* color: #fff; */
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+ul li ul.dropdown{
+    /* width: 100%; */
+    position:absolute;
+    z-index: 999;
+    display: none;
+    background-color: white;
+}
+ul li a:hover{
+    padding-top: 29px;
+    font-size: 21px;
+    color: rgba(251, 196, 31, 0.897);
+}
+ul li:hover ul.dropdown{
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+    color: yellow;
+    background-color: white;
+}
+.dropdown li{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.search{
+    margin-top: 8px;
+}
+.search:hover{
+    margin-top: 3px;
+    cursor: pointer;
+}
+.profile{
+    margin-top: 15px;
+    margin-right: 2px;
+}
+.profile:hover{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.cart{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.cart:hover{
+    margin-top: 4px;
+    cursor: pointer;
+}
+.boxo{
+    display: flex;
+    justify-content: center;
+}
+.boxi{
+    width:40%;
+    height:780px;
+    padding:40px;
+    margin:40px 0px;
+    background-color: white;
+    border-radius: 10px;
+}
+.welcome h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+.option{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.google{
+    display: flex;
+    align-items: center;
+    background-color: #0070f3;
+    color: white;
+    width:300px;
+    height: 50px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.google img{
+    border-radius: 20px;
+}
+.google p{
+    margin-left: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+.facebook{
+    display: flex;
+    align-items: center;
+    background-color:#2e55a5;
+    color: white;
+    width: 300px;
+    height: 50px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.facebook img{
+    border-radius: 10px;
+}
+.facebook p{
+    margin-left: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+h3{
+    color: gray;
+}
+
+.in p{
+    font-size: small;
+    font-weight: bold;
+    margin: 5px;
+}
+.in input{
+    width: 350px;
+    height: 30px;
+}
+.ini{
+    display: flex;
+}
+.ini p{
+    font-size: small;
+    font-weight: bold;
+    margin: 5px;
+}
+#sub{
+    width: 350px;
+    height: 60px;
+    background-color: rgb(45, 180, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;  margin-top: 10px;
+    cursor: pointer;    
+    text-decoration: none;
+    color: white;
+}
+.Submit p{
+
+    font-weight: bolder;
+    font-size: larger;
+}
+#sub:hover{
+    background-color: rgb(21, 165, 21);
+    border-radius: 10px;  margin-top: 10px;
+}
+.popup{
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: white;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    background-color: #1d51ba;
+}
+.popup img{
+    width: 100px;
+    margin-top: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin: 30px 0px 10px ;
+
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0px;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px ;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.no{
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 70px;
+}
+sup{
+    color: red;
+    font-size: 13px;
+    font-weight: bolder;
+}
+.footer{
+    background-color: rgb(209, 207, 207);
+    display: flex;
+    height: 330px;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#1e0452
+}
+.footer .boxe p{
+    padding: 10px 0px;
+}
+.footer .boxe2 p{
+    padding: 10px 0px;
+}
+.footer .boxe3 p{
+    padding: 10px 0px;
+}
+.footer .boxe4 p{
+    padding: 10px 0px;
+}
+.copyright{
+    background-color: rgb(209, 207, 207);
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    
+}
+.footer .boxe3 input{
+    width: 200px;background-color: rgb(209, 207, 207);
+    /* border: none; */
+    border-bottom: 5px;
+}
+.footer .boxe3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Yaad{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209, 207, 207);
+}
+#error{
+    font-weight: 900;
+    font-size: 15px;
+    color: red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 110px;
+    margin-right: 80px;
+}

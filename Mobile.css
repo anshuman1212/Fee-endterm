@@ -1,0 +1,547 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box ;
+}
+/* body {
+    background-image: linear-gradient(#94c7ee, white);
+  } */
+  body{
+    background-color: rgb(232, 232, 232);
+}
+.headi h1{
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    margin: 10px 0px 0px 0px;
+}
+nav{
+    /* margin-left: 30%; */
+    background-color: white;
+    display: flex;
+    position: sticky;
+    font-family: 'Young Serif', serif;
+    font-weight: 100;
+    margin-top: 20px;
+}
+ul{
+    margin-left: 25%;
+    margin-right: 20%;
+    list-style: none;
+    /* background: #8c52ff; */
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    
+}
+ul li a{
+    display: block;
+    padding-top: 30px;
+    /* color: #fff; */
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+}
+ul li ul.dropdown{
+    /* width: 100%; */
+    position:absolute;
+    z-index: 999;
+    display: none;
+    background-color: white;
+}
+ul li a:hover{
+    padding-top: 29px;
+    font-size: 20px;
+    color: rgba(251, 196, 31, 0.897);
+}
+ul li:hover ul.dropdown{
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+    color: yellow;
+    background-color: white;
+}
+.dropdown li{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.search{
+    margin-top: 8px;
+}
+.search:hover{
+    margin-top: 3px;
+    cursor: pointer;
+}
+.profile{
+    margin-top: 15px;
+    margin-right: 2px;
+}
+.profile:hover{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.cart1{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.cart1:hover{
+    margin-top: 4px;
+    cursor: pointer;
+}
+#Smarty{
+    /* background-color: rgb(255, 255, 0); */
+    /* background-color:#8d61e4; */
+    /* color: white; */
+    /* border: 2px solid black; */
+}
+/* .iss{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.iss img{
+    box-shadow: 2px 2px 5px black;
+}
+.example input {
+    height: 30px;
+}
+.example button{
+    height: 30px;
+    width: 30px;
+}
+#lis{
+    list-style: none;
+    display: flex;
+    width: 95%;
+    height: 40px;
+    align-items: center;
+    /* justify-self: center; */
+    /*justify-content: space-around;
+    background-color:#3d6cc9;
+    font-size: x-large;
+}
+#lis a{
+    text-decoration: none;
+    color: azure;
+    padding: 5px;
+}
+#lis a:hover{
+    background-color: #3b0d96;
+} */
+/* .Cheap{ */
+    /* font-family: 'Bricolage Grotesque', sans-serif;  */
+    /* box-shadow: 5px 5px 15px black; */
+    /* border: 2px solid  #3b0d96; */
+    
+/* } */
+.Banner{
+    background-image: url("MobilePhones/Bann.webp");
+    width: 100%;
+    background-color: #f5f5f5;
+    height:650px;
+    margin: 30px 0px;
+   margin-bottom: 30px;
+   animation: slider 10s linear 2s infinite ;
+   background-size: 100% 100%;
+       background-repeat: no-repeat;
+}
+@keyframes slider {
+    50%{
+       background-image: url("MobilePhones/copy.jpg");
+       background-size: 100% 100%;
+       background-repeat: no-repeat;
+       background-position: center;
+    }
+    
+}
+.up{
+    width:100%;
+    text-align: center;
+    height:60px;
+    padding: 20px;
+}
+.left-right{
+    width:100%;
+    height:400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.left{
+    text-align: left;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.left h4{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.down a:hover{
+    background-color: #3b0d96;
+    color: wheat;
+}
+.right{
+    text-align: right;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.down{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+.down a{
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    height: 50px;
+    width: 120px;
+    margin-top: 10px;
+
+    /* margin: 100px 0px 0px 350px;S */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+/* .MI{
+    margin: 20px 0px 0px 0px;
+} */
+.heading{
+    text-align: center;
+    /* background-color:#8d61e4; */
+    /* color:white; */
+    /* width: 100%; */
+    margin-bottom: 0px;
+}
+.images{
+    display: flex;
+    justify-content: center;
+}
+.phones{
+    display: flex;
+    /* justify-content: space-around; */
+    width: 82%;
+    /* box-shadow: 5px 5px 10px black; */
+    margin-top: 20px;
+    /* margin-left: 30px; 
+    margin-right: 30px; */
+    /* background-color: #7fa5f0; */
+    background: linear-gradient(to right, #ffdd33 0%, #ff99cc 100%);
+    padding: 30px 10px;
+    border-radius: 10px;
+    color: #3f2c66;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    overflow-x: scroll;
+    /* overflow-x: scroll; */
+    /* scrollbar-gutter: stable; */
+}
+.phones p{
+    display: flex;
+    justify-content: center; 
+}
+.phones1 p{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+.xiaomi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px; 
+    height: 320px;
+    width: 300px;
+    margin-right: 30px;
+    box-shadow: 1px 1px 20px rgb(113, 113, 113);
+    border-radius: 10px;background-color: white;
+    padding:20px 20px 0px 20px;
+}
+.xiaomi2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px rgb(113, 113, 113);
+    border-radius: 10px;
+    margin-left: 20px; 
+    margin-right: 30px;
+    background-color: white;
+    padding: 20px;
+}
+.xiaomi3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px rgb(113, 113, 113);
+    border-radius: 10px;
+    margin-left: 20px; 
+    margin-right: 30px;
+    background-color: white;
+    padding: 20px;
+}
+.xiaomi4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px rgb(113, 113, 113);
+    border-radius: 10px;
+    margin-left: 20px; 
+    margin-right: 30px;
+    background-color: white;
+    padding: 20px;
+}
+.xiaomi5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px rgb(113, 113, 113);
+    border-radius: 10px;
+    margin-left: 20px; 
+    margin-right: 20px;
+    background-color: white;
+    padding: 20px;
+}
+.heading2{
+    text-align: center;
+    /* background-color:#8d61e4; */
+    /* color:white; */
+    /* width: 100%; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.images1{
+    display: flex;
+    justify-content: center;
+}
+.phones1{
+    display: flex;
+    /* justify-content: space-around; */
+    width: 82%;
+    /* box-shadow: 5px 5px 10px black; */
+    margin-top: 20px;
+    /* margin-left: 30px; 
+    margin-right: 30px; */
+    /* background-color: #7fa5f0; */
+    background: linear-gradient(to right, #ffdd33 0%, #ff99cc 100%);
+    padding: 30px 10px;
+    border-radius: 10px;
+    color: #3f2c66;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    overflow-x: scroll;
+    /* overflow-x: scroll; */
+    /* scrollbar-gutter: stable; */
+}
+.iphone1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px; 
+    margin-right: 20px;
+    box-shadow: 1px 1px 20px rgb(113, 113, 113);
+    border-radius: 10px;background-color: white;
+    padding: 20px;
+    
+}
+.iphone2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px; 
+    margin-right: 20px;
+    box-shadow: 1px 1px 20px rgb(113, 113, 113);
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+.iphone3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px; 
+    margin-right: 20px;
+    box-shadow: 1px 1px 20px rgb(113, 113, 113);
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+.iphone4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px; 
+    margin-right: 20px;
+    box-shadow: 1px 1px 20px rgb(113, 113, 113);
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+.iphone5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px; 
+    margin-right: 20px;
+    box-shadow: 1px 1px 20px rgb(113, 113, 113);
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+.footer{
+    /* margin-top: 40px; */
+    background-color:rgb(209, 207, 207);
+    display: flex;
+    height: 330px;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#1e0452
+}
+.footer .boxe p{
+    padding: 10px 0px;
+}
+.footer .boxe2 p{
+    padding: 10px 0px;
+}
+.footer .boxe3 p{
+    padding: 10px 0px;
+}
+.footer .boxe4 p{
+    padding: 10px 0px;
+}
+.copyright{
+    background-color:rgb(209, 207, 207);
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    
+}
+.footer .boxe3 input{
+    width: 200px;background-color:rgb(209, 207, 207);
+    /* border: none; */
+    border-bottom: 5px;
+}
+.footer .boxe3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Yaad{
+    margin-top: 60px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(209, 207, 207);
+}
+/* .phones a:hover{
+    visibility: hidden;
+} */
+.butt{
+    /* width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    position: absolute; */
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin-top: 10px;
+}
+/* .butt:hover{
+    opacity: 1;
+} */
+.xiaomi:hover .butt{
+    visibility: visible;
+}
+.xiaomi2:hover .butt{
+    visibility: visible;
+}
+.xiaomi3:hover .butt{
+    visibility: visible;
+}
+.xiaomi4:hover .butt{
+    visibility: visible;
+}
+.xiaomi5:hover .butt{
+    visibility: visible;
+}
+.iphone1:hover .butt{
+    visibility: visible;
+}
+.iphone2:hover .butt{
+    visibility: visible;
+}
+.iphone3:hover .butt{
+    visibility: visible;
+}
+.iphone4:hover .butt{
+    visibility: visible;
+}
+.iphone5:hover .butt{
+    visibility: visible;
+}
+#Buy-Now{
+    height: 30px;
+    width: 70px;
+    background-color: rgb(243, 190, 16);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+#Cart{
+    height:30px;
+    width: 70px;
+    background-color: rgb(243, 190, 16);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}

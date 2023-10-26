@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 232, 232);
+}
+
+.container{
+    width: 750px;
+    height: 450px;
+    box-shadow: 5px 5px 30px black;
+    background: linear-gradient(to right, #ffdd33 0%, #ffb1d8  100%);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+    border-radius: 20px;
+}
+.container h1{
+    text-align: center;
+    text-decoration-line: underline;
+    
+}
+.first-row{
+    display: flex;
+    margin-top: 40px;
+}
+
+.owner{
+    width: 100%;
+    margin-right: 40px;
+}
+
+.input-field{
+    /* border:0.5px solid #999; */
+}
+.input-field input{
+    width:50%;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+.selection{
+    display: flex;
+    justify-content: space-between;
+    align-items: space-around;
+     
+
+}
+.selection select{
+    padding: 10px 20px;
+   
+}
+a{
+    background-color: rgb(252, 236, 208);
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none ;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards img{
+    width: 100px;
+    cursor: pointer;
+}
+.click{
+    cursor: pointer;
+    color: #fff;
+    text-align: left;
+    font-size:16px;
+    padding: 18px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+
+}

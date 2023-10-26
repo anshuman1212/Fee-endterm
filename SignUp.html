@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheZ</title>
+    <link rel="stylesheet" href="SignUp.css" />
+  </head>
+  <body>
+    <div class="all">
+      <!-- <nav id="sec">
+        <div class="iss">
+          <a href="#"><img src="home/logo1.jpg" alt="" width="100px" /></a>
+          <li id="lis">
+            <a href="Home.html">Home</a>
+            <a href="AboutUs.html">AboutUs</a>
+            <a href="ContactUs.html">Contact</a>
+            <a href="#Category">Categories</a>
+          </li>
+        </div>
+      </nav> -->
+      <nav>
+        <div class = "logo">
+          <img src="home/logo1.jpg" alt="" width="85px" height="80px">
+        </div>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="AboutUs.html">AboutUs</a></li>
+          
+          <li>
+            <a href="#">Categories</a>
+            <ul class="dropdown">
+              <li><a href="SmartPhones.html">SmartPhones</a></li>
+              <li><a href="Laptop.html">Laptop</a></li>
+              <li><a href="#">Television</a></li>
+              <li><a href="#">SmartWatch</a></li>
+              <li><a href="#">Headphone</a></li>
+            </ul>
+            <li><a href="ContactUs.html">Contact</a></li>
+          </li>
+        </ul>
+        <div class="search">
+          <img src="Laptop/search-icon.png" alt="" width="80px" height="80px">
+        </div>
+        <div class="profile">
+          <img src="Laptop/pro.png" alt="" width="60px" height="60px">
+        </div>
+        <div class="cart">
+          <img src="Laptop/cart1.jpg" alt="" width="70px" height="70px">
+        </div>
+      </nav>
+      <div class="boxo">
+        <div class="boxi">
+          <div class="welcome">
+            <h1>Sign Up Now!</h1>
+          </div>
+          <div class="option">
+            <div class="google">
+              <img src="SignUp/google.jpg" alt="" width="30px" height="30px" />
+              <p>Sign Up With Google</p>
+            </div>
+            <div class="facebook">
+              <img
+                src="SignUp/facebook.jpg"
+                alt=""
+                width="35px"
+                height="30px"
+              />
+              <p>Sign Up With Facebook</p>
+            </div>
+            <h3>OR</h3>
+            <div id="error"></div>
+            <form id="form" onsubmit="openPopup()">
+              <div class="in">
+                <p>Name<sup>*</sup></p>
+
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="in">
+                <p>Email<sup>*</sup></p>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="in">
+                <p>Password<sup>*</sup></p>
+                <input type="password" name="password" id="password" />
+                <p>Your password must contain 6 characters</p>
+              </div>
+              <div class="in">
+                <p>Confirm Password<sup>*</sup></p>
+                <input type="password" name="cnpassword" id="cnpassword" />
+              </div>
+              <div class="ini">
+                <input type="checkbox" name="Checki" id="Checki" />
+                <p>I agree to all Terms of service and privacy policy</p>
+              </div>
+              <div class="Submit">
+                <p id="sub">Sign Up</p>
+              </div>
+            </form>
+            <div class="popup" id="popup">
+              <img src="tick.png" alt="" />
+              <h2>Thank you!</h2>
+              <p>Your have successfully loged in</p>
+              <a href="SIgnIn.html"><button type="button">OK</button></a>
+            </div>
+            <div class="no">
+              <p>Already have an account?</p>
+              <a href="SIgnIn.html">Sign In</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Yaad">
+        <img src="Home/logo1.jpg" alt="" width="100px" height="100px" />
+        <h1>Electronics</h1>
+      </div>
+      <div class="footer">
+        <div class="boxe">
+          <p>Home</p>
+          <p>About</p>
+          <p>Contact</p>
+          <p>Categories</p>
+        </div>
+        <div class="boxe2">
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+          <p>Cookie Policy</p>
+        </div>
+        <div class="boxe3">
+          <p>Sign Up To receive</p>
+          <input type="email" name="email1" id="email1" />
+          <p>Subscribe</p>
+        </div>
+        <div class="boxe4">
+          <a href="#"><p>Instagram</p></a>
+          <a href="#"><p>TikTok</p></a>
+          <a href="#"><p>Facebook</p></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy;The Z under the copyright act 1998</p>
+      </div>
+    </div>
+    <script src="SignUp.js"></script>
+  </body>
+</html>
